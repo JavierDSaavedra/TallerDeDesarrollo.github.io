@@ -13,7 +13,7 @@ Si no se define la opcion `base` en Vite, los assets se intentan cargar desde `/
 ## Configuracion aplicada
 
 - `vite.config.js` usa `base: '/TallerDeDesarrollo.github.io/'`.
-- `package.json` incluye scripts para desplegar `dist` con `gh-pages`.
+- Workflow de Pages en `.github/workflows/deploy.yml` para publicar `dist` automaticamente.
 
 ## Desarrollo local
 
@@ -24,19 +24,15 @@ Si no se define la opcion `base` en Vite, los assets se intentan cargar desde `/
 
 ## Despliegue a GitHub Pages
 
-1. Instalar dependencias:
-	npm install
-2. Publicar:
-	npm run deploy
+En este repositorio el despliegue es automatico:
 
-Este comando genera `dist` y publica su contenido en la rama `gh-pages`.
+1. Haz push a la rama `main`.
+2. GitHub Actions compila el proyecto y publica `dist` en Pages.
 
 ## Ajuste en GitHub
 
 En Settings > Pages del repositorio, configurar:
 
-- Source: Deploy from a branch
-- Branch: `gh-pages`
-- Folder: `/ (root)`
+- Source: `GitHub Actions`
 
 Luego de guardar, GitHub Pages publicara la version compilada correcta.
