@@ -396,7 +396,7 @@ function App() {
                 Mitigar riesgos de seguridad con ciclos cortos de pruebas de estres
                 en cada modulo desarrollado.
               </p>
-            </div>
+            </article>
           </div>
         </section>
 
