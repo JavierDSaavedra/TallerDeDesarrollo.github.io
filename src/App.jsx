@@ -12,9 +12,6 @@ function App() {
           <a href="#solucion">Solucion</a>
           <a href="#objetivos">Objetivos</a>
         </nav>
-        <a className="btn" href="#contacto">
-          Contacto
-        </a>
       </header>
 
       <main>
