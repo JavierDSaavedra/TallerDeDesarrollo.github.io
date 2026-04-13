@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 :root {
-  --ink-strong: #0b2030;
-  --ink: #365063;
-  --bg: #f1f9f7;
-  --stroke: #cfe5e0;
-  --stroke-strong: #8fa6ba;
-  --heading: 'Sora', 'Segoe UI', sans-serif;
+  --bg-900: #0a0d12;
+  --bg-800: #111621;
+  --surface-700: #171d29;
+  --surface-650: #1c2433;
+  --surface-600: #212b3b;
+  --stroke-500: #2f3d53;
+  --text-100: #f4f7fb;
+  --text-200: #d4dceb;
+  --text-300: #9eacc3;
+  --accent: #1f4e8a;
+  --accent-soft: rgba(31, 78, 138, 0.24);
+  --heading: 'Space Grotesk', 'Segoe UI', sans-serif;
   --body: 'Manrope', 'Segoe UI', sans-serif;
 }
 
@@ -26,13 +32,13 @@ body {
 }
 
 body {
-  color: var(--ink);
+  color: var(--text-200);
   font-family: var(--body);
   line-height: 1.55;
   background:
-    radial-gradient(circle at 8% 8%, rgba(15, 118, 110, 0.16) 0, transparent 33%),
-    radial-gradient(circle at 92% 12%, rgba(249, 115, 22, 0.16) 0, transparent 34%),
-    linear-gradient(180deg, #f4fbfa 0%, #ecf5f3 100%);
+    radial-gradient(circle at 12% 14%, rgba(84, 102, 141, 0.22) 0, transparent 35%),
+    radial-gradient(circle at 85% 4%, rgba(53, 143, 117, 0.22) 0, transparent 30%),
+    linear-gradient(180deg, var(--bg-800) 0%, var(--bg-900) 60%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -43,5 +49,5 @@ h1,
 h2,
 h3 {
   font-family: var(--heading);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
